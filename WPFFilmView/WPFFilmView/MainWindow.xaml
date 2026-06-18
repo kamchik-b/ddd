@@ -13,7 +13,12 @@
         <StackPanel Margin="10" HorizontalAlignment="Center">
             <TextBlock x:Name="welcomeTb" HorizontalAlignment="Center" FontSize="30" FontWeight="Black" Foreground="SkyBlue"></TextBlock>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Right">
+        <StackPanel Margin="5" HorizontalAlignment="Right">
+            <Image x:Name="avatarImg" Width="40" Height="40" Stretch="UniformToFill">
+                <Image.Clip>
+                    <EllipseGeometry Center="20,20" RadiusX="20" RadiusY="20"/>
+                </Image.Clip>
+            </Image>
             <Button Cursor="Hand" x:Name="logOutBt" Click="logOutBt_Click" Margin="5" FontWeight="Bold" Background="DarkBlue" BorderBrush="DarkBlue" Foreground="LightBlue" FontSize="18" Width="80" Height="30">Log out</Button>
         </StackPanel>
     </Grid>
