@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFFilmView.Auth.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFilmView.Auth"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/736x/8b/51/8b/8b518b289cfa7a18927cb392a19c0267.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" Margin="25">
+        <TextBlock HorizontalAlignment="Center" FontWeight="Black" Foreground="SkyBlue" FontSize="35">Welcome to FilmFLow!</TextBlock>
+            <Button x:Name="logInBt" Click="logInBt_Click" Cursor="Hand" Margin="0, 120, 0, 0" Height="60" Width="400" FontWeight="Black" Foreground="PowderBlue" Background="DarkBlue" BorderBrush="DarkBlue" FontSize="35">Log in</Button>
+            <Button x:Name="signUpBt" Click="signUpBt_Click" Cursor="Hand" Margin="0, 20, 0, 0" Height="60" Width="400" FontWeight="Black" Foreground="DarkBlue" Background="PowderBlue" BorderBrush="PowderBlue" FontSize="35">Sign up</Button>
+        </StackPanel>
+    </Grid>
+</Window>

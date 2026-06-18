@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFFilmView.Auth.LogInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFilmView.Auth"
+        mc:Ignorable="d"
+        Title="LogInWindow" Height="400" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/736x/30/ea/65/30ea656dd748031aec67cb1e75e02423.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+            <TextBlock Text="Log in" FontWeight="Black" FontSize="30" Foreground="SkyBlue" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <TextBlock FontWeight="Bold" Text="Login:" Foreground="SkyBlue" FontSize="20"/>
+            <TextBox FontSize="20" Name="txtLogin" Margin="0,5,0,15" Height="30"/>
+
+            <TextBlock FontWeight="Bold" Text="Password:" Foreground="SkyBlue" FontSize="20"/>
+            <PasswordBox FontSize="20" Name="txtPassword" Margin="0,5,0,20" Height="30"/>
+
+            <Button x:Name="signInBt" Click="signInBt_Click" Cursor="Hand" BorderBrush="DarkBlue" Foreground="SkyBlue" Background="DarkBlue" FontSize="15" FontWeight="Bold" Content="Sign in" Width="120" Height="35"/>
+        </StackPanel>
+    </Grid>
+</Window>

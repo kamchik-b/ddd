@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFFilmView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="700" WindowStartupLocation="CenterScreen">
     <Grid>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/736x/56/f3/4e/56f34eb9f97517e8cae4bf6f68922c9c.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel Margin="10" HorizontalAlignment="Center">
+            <TextBlock x:Name="welcomeTb" HorizontalAlignment="Center" FontSize="30" FontWeight="Black" Foreground="SkyBlue"></TextBlock>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right">
+            <Button Cursor="Hand" x:Name="logOutBt" Click="logOutBt_Click" Margin="5" FontWeight="Bold" Background="DarkBlue" BorderBrush="DarkBlue" Foreground="LightBlue" FontSize="18" Width="80" Height="30">Log out</Button>
+        </StackPanel>
     </Grid>
 </Window>
