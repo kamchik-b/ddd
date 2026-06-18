@@ -43,7 +43,8 @@ namespace WPFFilmView.Auth
                 var user = new User
                 {
                     Login = txtLogin.Text,
-                    Password = txtPassword.Password
+                    Password = txtPassword.Password,
+                    AvatarPath = avatar_path
                 };
                 
                 db.Users.Add(user);
@@ -52,6 +53,16 @@ namespace WPFFilmView.Auth
                 CreatedUser = user;
                 this.DialogResult = true;
                 this.Close();
+            }
+        }
+        private string avatar_path;
+        private void chooseImageBt_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new Microsoft.Win32.OpenFileDialog();
+            if (dlg.ShowDialog() == true)
+            {
+                avatar_path = dlg.FileName;
+                avatarImg.Source = new BitmapImage(new Uri(avatar_path));
             }
         }
     }

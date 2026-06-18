@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,11 @@ namespace WPFFilmView
         {
             InitializeComponent();
             welcomeTb.Text = $"Hello, {currentUser.Login}!";
+
+            if(!string.IsNullOrEmpty(currentUser.AvatarPath) && File.Exists(currentUser.AvatarPath))
+            {
+                avatarImg.Source = new BitmapImage(new Uri(currentUser.AvatarPath));
+            }
         }
 
         private void logOutBt_Click(object sender, RoutedEventArgs e)

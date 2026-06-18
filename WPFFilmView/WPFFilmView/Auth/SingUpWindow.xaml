@@ -19,6 +19,14 @@
             <TextBlock FontWeight="Bold" Text="Password:" Foreground="SkyBlue" FontSize="20"/>
             <PasswordBox FontSize="20" Name="txtPassword" Margin="0,5,0,20" Height="30"/>
 
+            <Image Margin="0, -5, 0, 10" x:Name="avatarImg" Width="50" Height="50" Stretch="UniformToFill">
+                <Image.Clip>
+                    <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25"/>
+                </Image.Clip>
+            </Image>
+
+            <Button x:Name="chooseImageBt" Click="chooseImageBt_Click" Cursor="Hand" Foreground="DarkBlue" Background="SkyBlue" BorderBrush="SkyBlue" FontSize="12" FontWeight="Bold" Width="150" Height="20" Margin="0, 0, 0, 5">Choose image</Button>
+
             <Button x:Name="signUpBt" Click="signUpBt_Click" Cursor="Hand" Foreground="SkyBlue" Background="DarkBlue" BorderBrush="DarkBlue" FontSize="15" FontWeight="Bold" Content="Create account" Width="120" Height="35"/>
         </StackPanel>
     </Grid>
